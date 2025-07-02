@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background-color: rgb(247, 247, 247);
+    
+}
+main{
+    display: flex;
+}
+div{
+    height:100px;
+    width:100px;
+    
+}
+#Box1{background-color: rgb(114, 111, 218);
+}
+#Box2{background-color: rgb(151, 151, 80);
+} 
+#Box3{background-color: rgb(73, 167, 135);}
+ 

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  /* background: rgba(255, 255, 255, 0.3); */
+  /* backdrop-filter: blur(10px); */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  color: #8b0000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #8b0000;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b30000;
+}
+
+.hero {
+  background-image: url(new/aesthetic-paris-eiffel.jpg); /* Replace with correct path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+  /* height: calc(100% - 38px); */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #5c1a1a;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Love Light', cursive;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #3b3b3b;
+}
+
+.btn {
+  background-color: #660000;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #990000;
+}
+
+footer {
+  z-index: 8;
+  padding: 0%;
+  margin-bottom: 0%;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+}
